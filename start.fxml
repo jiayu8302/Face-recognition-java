@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartController">
+   <bottom>
+      <VBox prefHeight="165.0" prefWidth="440.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="74.0" prefWidth="600.0">
+               <children>
+                  <VBox fillWidth="false" prefHeight="20.0" prefWidth="124.0" spacing="15.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User name:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="16.0" top="6.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="20.0" prefWidth="141.0" spacing="8.0">
+                     <children>
+                        <TextField fx:id="username">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="password" />
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="150.0" />
+               </BorderPane.margin>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="440.0">
+               <children>
+                  <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btn1Clicked" prefWidth="100.0" text="Log in">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <HBox prefHeight="27.0" prefWidth="48.0" />
+                  <Button fx:id="register" mnemonicParsing="false" onAction="#registerClicked" prefWidth="100.0" text="Register">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="160.0" />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="16.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="160.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+   <center>
+      <ImageView fitHeight="199.0" fitWidth="435.0" opacity="0.66" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@CMU.png" />
+         </image></ImageView>
+   </center>
+   <top>
+      <Button fx:id="exit1" mnemonicParsing="false" onAction="#exit1Clicked" prefWidth="70.0" text="Exit" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="470.0" />
+         </BorderPane.margin>
+      </Button>
+   </top>
+</BorderPane>
